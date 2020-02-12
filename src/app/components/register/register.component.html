@@ -1,0 +1,14 @@
+<div class="col-lg-12 mt-3">
+    <h1>
+        {{register_title}}
+    </h1>
+    <hr>
+    <form class="col-md-5 ml-0 pl-0" #registerForm="ngForm" (ngSubmit)="onSubmin(registerForm)">
+
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" #name="ngModel" [(ngModel)]="user.name"> 
+        </div>
+
+    </form>
+</div>

@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
 
   constructor() {
     this.register_title = 'Registrate';
-    this.user = new User('','','','','','','ROLEUSER'); //instacial de un nuevo objeto del modelo de usuario
+    this.user = new User('','','','','','','ROLEUSER'); //instacia de un nuevo objeto del modelo de usuario
   }
 
   ngOnInit() {
@@ -21,7 +21,7 @@ export class RegisterComponent implements OnInit {
 
 
   onSubmin(form){
-    
+    console.log(this.user);
   }
 
 }
